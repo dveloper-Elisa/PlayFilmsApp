@@ -43,7 +43,19 @@ const Home = () => {
         })}
       </div>
       <div className="md:flex flex flex-wrap justify-evenly">
-        {cards.slice(7, 14).map((item, index) => {
+        {cards.slice(14, 21).map((item, index) => {
+          return (
+            <Card
+              key={index}
+              image={item.backdrop_path}
+              name={item.original_title}
+              id={item.id}
+            />
+          );
+        })}
+      </div>
+      <div className="md:flex flex flex-wrap justify-evenly">
+        {cards.slice(7 - 14).map((item, index) => {
           return (
             <Card
               key={index}

@@ -28,13 +28,20 @@ const Movies = () => {
 
   return (
     <>
+      <div className="flex justify-center items-baseline">
+        <h3 className="bg-yellow-800 text-white p-2 mt-3 animate-pulse">
+          Trailers Availd to this Film are:
+        </h3>
+      </div>
       <div className="flex justify-center mt-20">
-        <div className="border">
-          <div className="flex flex-center flex-col gap-3">
+        <div className="border  bg-blue-600 flex-wrap">
+          <div className="flex flex-col flex-center gap-3">
             {trailer.map((item, index) => {
               return (
                 <Link to={`/playnow/${item.key}/${id}`} key={index}>
-                  <p className="border m-1 cursor-pointer">{item.name}</p>
+                  <p className="border m-1 cursor-pointer hover:bg-white hover:border-y-orange-500 transition-shadow p-3 text-white hover:text-black text-center rounded-xl">
+                    {item.name}
+                  </p>
                 </Link>
               );
             })}

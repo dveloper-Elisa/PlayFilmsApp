@@ -5,7 +5,7 @@ const Card = (pros) => {
     <>
       <div className="flex justify-center mt-3">
         <div className="md:flex flex flex-col bg-green-50  ">
-          <div className="md:flex flex flex-col  m-1">
+          <div className="md:flex w-[170px] h-[222px]  flex flex-col  m-1 mb-20">
             <Link to={`/movie/${pros.id}`}>
               <img
                 width="170px"
@@ -15,7 +15,7 @@ const Card = (pros) => {
                 className="hover:opacity-80"
               />
 
-              <p className="text-white bg-black opacity-70 text-center flex flex-wrap top-0 items-center w-[100%]">
+              <p className="text-white bg-black opacity-70 text-center flex overflow-hidden top-[-3px] items-center w-[100%]">
                 {pros.name}
               </p>
             </Link>

@@ -1,4 +1,3 @@
-import Movi from "./movie";
 import axios from "axios";
 import { useState, useEffect } from "react";
 
