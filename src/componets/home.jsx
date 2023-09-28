@@ -55,7 +55,7 @@ const Home = () => {
         })}
       </div>
       <div className="md:flex flex flex-wrap justify-evenly">
-        {cards.slice(7 - 14).map((item, index) => {
+        {cards.slice(7, 14).map((item, index) => {
           return (
             <Card
               key={index}

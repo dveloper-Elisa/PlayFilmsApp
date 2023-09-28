@@ -6,7 +6,7 @@ const Navigation = () => {
   return (
     <>
       <div className="top-0 sticky">
-        <div className="flex justify-around items-center bg-blue-900  flex-cols">
+        <div className="flex justify-around items-center bg-blue-900 z-20 flex-cols">
           <div className="">
             <h1 className="text-white p-5">
               <img
