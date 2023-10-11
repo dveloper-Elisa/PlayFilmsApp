@@ -8,8 +8,8 @@ const Card = (pros) => {
           <div className="md:flex w-[170px] h-[222px]  flex flex-col  m-1 mb-20">
             <Link to={`/movie/${pros.id}`}>
               <img
-                width="170px"
-                height="222px"
+                width="170p"
+                height="222p"
                 src={`https://www.themoviedb.org/t/p/w600_and_h900_bestv2${pros.image}`}
                 alt="image not found"
                 className="hover:opacity-80"

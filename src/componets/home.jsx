@@ -29,8 +29,8 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="div">
-      <div className="md:flex flex flex-wrap justify-evenly">
+    <div className="grid items-center">
+      <div className="grid grid-cols-2 lg:grid-cols-7 md:grid-cols-4 sm:grid-cols-3">
         {cards.slice(0, 7).map((item, index) => {
           return (
             <Card
@@ -42,8 +42,8 @@ const Home = () => {
           );
         })}
       </div>
-      <div className="md:flex flex flex-wrap justify-evenly">
-        {cards.slice(14, 21).map((item, index) => {
+      <div className="grid grid-cols-2 lg:grid-cols-7 md:grid-cols-4 sm:grid-cols-3">
+        {cards.slice(8, 15).map((item, index) => {
           return (
             <Card
               key={index}
@@ -54,8 +54,8 @@ const Home = () => {
           );
         })}
       </div>
-      <div className="md:flex flex flex-wrap justify-evenly">
-        {cards.slice(7, 14).map((item, index) => {
+      <div className="grid grid-cols-2 lg:grid-cols-7 md:grid-cols-4 sm:grid-cols-3">
+        {cards.slice(13, 20).map((item, index) => {
           return (
             <Card
               key={index}
